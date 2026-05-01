@@ -1,0 +1,14 @@
+[package]
+name = "syscallmind-pipeline"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+syscallmind-common = { path = "../common" }
+serde.workspace = true
+serde_json.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+crossbeam-channel.workspace = true
+parking_lot.workspace = true

@@ -1,0 +1,11 @@
+[package]
+name = "syscallmind-safety"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+syscallmind-common = { path = "../common" }
+serde.workspace = true
+tracing.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true

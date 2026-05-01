@@ -1,0 +1,28 @@
+[runtime]
+trace_ring_buffer_size_kb = 128
+async_pipeline_batch_size = 1024
+
+[optimizer]
+cache_max_entries = 16384
+cache_invalidation_policy = "epoch_aware"
+prefetch_confidence_threshold = 0.90
+dedup_enabled = true
+
+[ml]
+model_path = "ml/inference/models/transformer.onnx"
+inference_threads = 4
+hot_reload_enabled = true
+hot_reload_interval_secs = 3600
+
+[anomaly]
+enabled = true
+model_path = "ml/inference/models/anomaly.onnx"
+contamination_threshold = 0.02
+policy = "throttle"
+divergence_kl_threshold = 3.0
+
+[safety]
+enforce_determinism = true
+allow_crypto_caching = true
+allow_sysvar_batching = true
+allow_cpi_optimization = false
