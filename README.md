@@ -419,19 +419,6 @@ This project has potential for submission to USENIX Security, EuroSys, or IEEE S
 
 ---
 
-## Contributing
-
-Contributions are welcome. Before opening a PR, all optimization passes must include:
-
-1. A safety classification justification (which `SafetyClass` and why)
-2. Unit tests covering the optimization path
-3. A fuzz test or property-based test exercising the determinism guarantee
-4. Benchmark numbers showing the performance delta on the standard workload
-
-See [`docs/architecture.md`](docs/architecture.md) for a detailed component breakdown before diving in.
-
----
-
 ## Tech Stack
 
 | Layer | Technology |
